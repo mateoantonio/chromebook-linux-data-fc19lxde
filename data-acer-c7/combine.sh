@@ -25,5 +25,5 @@ done
 
 echo
 echo "Check $tgt..."
-sha1sum -c fc19lxde-sha1
+sha1sum -c conf-fc19lxde-sha1
 
