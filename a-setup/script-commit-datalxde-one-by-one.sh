@@ -23,7 +23,7 @@ for FILENAME in $flist ; do
       issync=`git status | grep ahead`
      if [[ "$issync" =~ "ahead" ]]; then
     echo
-    echo -n "  sleep 10  "; sleep 10
+    echo -n "  sleep 4  "; sleep 4
     echo "  Remote push: "
     echo
       git push origin master
@@ -46,12 +46,12 @@ for FILENAME in $flist ; do
           echo "  done:  $edata"
           exit 1
       else
-          echo "  File: $one $two  status in sync "
+          echo "  File: $FILENAME  status in sync "
       fi
+    echo -n -e "\n  sleep 2  "; sleep 2
 
     echo
 
-  done
 done
           edata=`date`
           echo "  start: $sdata"
